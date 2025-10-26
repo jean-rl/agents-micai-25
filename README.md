@@ -1,11 +1,13 @@
 # AI Agents using Small Language Models - MICAI 2025
 
+![tutorial-banner](./slides/tutorial_banner.png)
+
 Welcome to the repository of the tutorial. We're happy to have you here!
 
 Here we've packed a small collection of resources to help you get started with building AI agents using small language models. The repository is structured as follows:
 
 - `notebooks/`: Contains all the Jupyter notebooks used in the tutorial.
-- `utils/`: Here you'll find the `llama-server` binary, the inference engine you'll need if you decide to run the notebooks in Google Colab, as it was compiled for T3 instances.
+- `utils/`: Here you'll find the `llama-server` binary, the inference engine you'll need if you decide to run the notebooks in Google Colab, as it was compiled for T4 instances.
 - `papers/`: A collection of relevant papers and articles that provide deeper insights into the topics covered in the tutorial.
 - `slides/`: The slide deck used during the tutorial presentation.
 
