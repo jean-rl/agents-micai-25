@@ -39,10 +39,9 @@ Requirements:
 
 - 🧠 LM Studio
  — required (for running local SLMs).
- Alternatively: Ollama or 
+ Alternatively: Ollama
 
 - 🐍 Python
- (≥3.10)
 
 - ⚡ uv
  — recommended for fast dependency management.
@@ -58,7 +57,7 @@ Requirements:
 
 - 🧩 The llama-server binary (already compiled for Colab; included in utils/)
 
-## 🧠 2. MCPs Module (Model Context Protocol)
+## 🧠 2. MCPs Module
 
 This module demonstrates interaction with local SLM.
 
@@ -69,7 +68,7 @@ Requirements:
 - 🧠 LM Studio — required for local model execution
 (or an equivalent desktop LLM tool with MCP's such as Claude Desktop, etc.)
 
-- 🐍 Python environment
+- 🐍 Python
 
 - ⚡ uv
  — preferred but not mandatory.
@@ -94,7 +93,7 @@ The inference engine depends on your chosen setup:
 2. Download a compatible model for local inference.
 We recommend: `qwen/qwen3-4b-thinking-2507` (This model offers a good balance between reasoning performance and resource efficiency.)
 
-3. Once the model is downloaded, ensure it is loaded and running before launching the notebooks.
+3. Once the model is downloaded, ensure it is loaded and running.
 
 # Contact
 
