@@ -8,6 +8,7 @@ Here we've packed a small collection of resources to help you get started with b
 
 - `notebooks/`: Contains all the Jupyter notebooks used in the tutorial.
 - `utils/`: Here you'll find the `llama-server` binary, the inference engine you'll need if you decide to run the notebooks in Google Colab, as it was compiled for T4 instances.
+- `utils_mcp/`: Contains the initial `MCP` files and the README with the API documentation that we’ll use throughout the tutorial.
 - `papers/`: A collection of relevant papers and articles that provide deeper insights into the topics covered in the tutorial.
 - `slides/`: The slide deck used during the tutorial presentation.
 
