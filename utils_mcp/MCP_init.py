@@ -86,3 +86,6 @@ def _api_request(method: str, endpoint: str, data: Optional[Dict[str, Any]] = No
         return {"error": str(errv)}
     
 token_store = TokenStore()
+
+if __name__ == "__main__":
+    mcp.run(transport="stdio")
