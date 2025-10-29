@@ -89,7 +89,7 @@ token_store = TokenStore()
 
 # --- Tutorial Start Point ---
 @mcp.tool()
-def example():
+def example() -> Dict[str, Any]:
     pass
 
 if __name__ == "__main__":
