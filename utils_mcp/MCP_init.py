@@ -87,5 +87,10 @@ def _api_request(method: str, endpoint: str, data: Optional[Dict[str, Any]] = No
     
 token_store = TokenStore()
 
+# --- Tutorial Start Point ---
+@mcp.tool()
+def example():
+    pass
+
 if __name__ == "__main__":
     mcp.run(transport="stdio")
