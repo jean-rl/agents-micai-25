@@ -6,9 +6,7 @@ Welcome to the repository of the tutorial. We're happy to have you here!
 
 Here we've packed a small collection of resources to help you get started with building AI agents using small language models. The repository is structured as follows:
 
-- `notebooks/`: Contains all the Jupyter notebooks used in the tutorial.
-- `utils/`: Here you'll find the `llama-server` binary, the inference engine you'll need if you decide to run the notebooks in Google Colab, as it was compiled for T4 instances.
-- `utils_mcp/`: Contains the initial `MCP` files and the README with the API documentation that we’ll use throughout the tutorial.
+- `utils/`: Contains the `llama-server` binary (compiled for T4 instances) required to run `colab_agents.ipynb` on Google Colab, and the MCP utility script used by `mcp.ipynb`.
 - `papers/`: A collection of relevant papers and articles that provide deeper insights into the topics covered in the tutorial.
 - `slides/`: The slide deck used during the tutorial presentation.
 
@@ -23,77 +21,34 @@ cd agents-micai-25
 
 Make sure you have the necessary dependencies installed. You can find the requirements in the `notebooks/` directory.
 
+# 🐍 Installation
+
+If you plan to run the notebooks locally, ensure you have Python and Jupyter installed. You can set up a virtual environment and install the required packages using uv (preferred).
+
+#### uv 
+
+**Only for local setup**. To install follow the official instructions for your OS [here](https://docs.astral.sh/uv/getting-started/installation/).
+
+#### Inference Engine
+
+- `Colab`: If you wish to run the `colab_agents.ipynb` notebook on Google Colab, no additional setup is required. The notebook is pre-configured to use the `llama-server` binary included in the `utils/` folder.
+- `Local Setup`: First download and install LM Studio from [this link](https://lmstudio.ai/). Then download a compatible model for local inference using the user interface. We recommend `qwen/qwen3-4b-thinking-2507` or `llama3.1-8b`.
+
 # ⚙️ Tutorial Structure & Requirements
 
-The tutorial is divided into two main modules, each with different setup options and requirements.
+The tutorial is divided into **three** main sections, you can use this as a guide to navigate through the materials, but we recommend following the order presented in the slides.
 
-## 🧩 1. Agents Module
+#### 🧪 1. Language Models Overview
 
-You can run this module locally or using Google Colab.
+**You can run this module either locally or in Google Colab**. The associated notebooks are `tokenizer.ipynb`, `forward_bert.ipynb`, and `attention_mechanism.ipynb`. Here we cover the basics of language models, including tokenization, model architecture, and attention mechanisms used in transformer-based models.
 
-`Option A — Local setup`
+#### 🧩 2. MCPs
 
-Requirements:
+**You can run this module only locally with LMStudio**. The associated notebook is `mcp.ipynb`, and the utility scripts are in the `utils/mcp/` folder. Here we explore the Model Context Protocol (MCPs) and how it's used to enchance the capabilities of language models for tools usage.
 
-- 💻 A laptop with a capable GPU or a MacBook (M1 or higher recommended)
+#### 🧠 3. Agents Module
 
-- 🧠 LM Studio
- — required (for running local SLMs).
- Alternatively: Ollama
-
-- 🐍 Python
-
-- ⚡ uv
- — recommended for fast dependency management.
-Alternatively: pip, venv, or conda also work
-
-`Option B — Google Colab setup`
-
-Requirements:
-
-- 🌐 Google account with access to Google Colab
-
-- ⚙️ A runtime with GPU (T4 or better)
-
-- 🧩 The llama-server binary (already compiled for Colab; included in utils/)
-
-## 🧠 2. MCPs Module
-
-This module demonstrates interaction with local SLM.
-
-Requirements:
-
-- 💻 A laptop with a capable GPU or a MacBook (M1 or higher recommended)
-
-- 🧠 LM Studio — required for local model execution
-(or an equivalent desktop LLM tool with MCP's such as Claude Desktop, etc.)
-
-- 🐍 Python
-
-- ⚡ uv
- — preferred but not mandatory.
-You can also use standard tools like pip or conda
-
-# Installation
-If you plan to run the notebooks locally, ensure you have Python and Jupyter installed. You can set up a virtual environment and install the required packages using uv:
-
-### - uv
-To install follow the official instructions for your OS [here](https://docs.astral.sh/uv/getting-started/installation/).
-
-### - Inference Engine
-The inference engine depends on your chosen setup:
-
-- `Colab setup`: Please refer to the instructions in the `colab_agents.ipynb` notebook for downloading and setting up the `llama-server` binary.
-
-- `Local setup`: Download and install LM Studio as described below.
-
-### - LM Studio Setup
-
-1. Download and install LM Studio from [here](https://lmstudio.ai/).
-2. Download a compatible model for local inference.
-We recommend: `qwen/qwen3-4b-thinking-2507` (This model offers a good balance between reasoning performance and resource efficiency.)
-
-3. Once the model is downloaded, ensure it is loaded and running.
+**You can run this module either locally or in Google Colab**. The associated notebooks are `colab_agents.ipynb` and `lmstudio_agents.ipynb`. Here we dive into building AI agents using small language models, demonstrating how an agent framework can be implemented for experimental purposes.
 
 # Contact
 
