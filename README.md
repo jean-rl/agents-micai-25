@@ -34,21 +34,21 @@ If you plan to run the notebooks locally, ensure you have Python and Jupyter ins
 - `Colab`: If you wish to run the `colab_agents.ipynb` notebook on Google Colab, no additional setup is required. The notebook is pre-configured to use the `llama-server` binary included in the `utils/` folder.
 - `Local Setup`: First download and install LM Studio from [this link](https://lmstudio.ai/). Then download a compatible model for local inference using the user interface. We recommend `qwen/qwen3-4b-thinking-2507` or `llama3.1-8b`. To see full logs while running any language model, open a terminal and run `lms log stream`, for more details visit the [log-stream](https://lmstudio.ai/docs/cli/log-stream) documentation.
 
-# ⚙️ Tutorial Structure & Requirements
+# 📚 Tutorial Structure
 
-The tutorial is divided into **three** main sections, you can use this as a guide to navigate through the materials, but we recommend following the order presented in the slides.
+The tutorial is divided into **three** main sections. You can use this as a guide to navigate through the materials, but we recommend following the order presented in the slides.
 
 #### 🧪 1. Language Models Overview
 
-**You can run this module either locally or in Google Colab**. The associated notebooks are `tokenizer.ipynb`, `forward_bert.ipynb`, and `attention_mechanism.ipynb`. Here we cover the basics of language models, including tokenization, model architecture, and attention mechanisms used in transformer-based models.
+**You can run notebooks from this section either locally or in Google Colab**. The associated notebooks are `tokenizer.ipynb`, `forward_bert.ipynb`, and `attention_mechanism.ipynb`. Here we cover the basics of language models, including tokenization, model architecture, and attention mechanisms used in transformer-based models.
 
 #### 🧩 2. MCPs
 
-**You can run this module only locally with LMStudio**. The associated notebook is `mcp.ipynb`, and the utility scripts are in the `utils/mcp/` folder. Here we explore the Model Context Protocol (MCPs) and how it's used to enchance the capabilities of language models for tools usage.
+**You can run notebooks from this section only locally with LMStudio**. The associated notebook is `mcp.ipynb`, and the utility scripts are in the `utils/mcp/` folder. Here we explore the Model Context Protocol (MCPs) and how it's used to enhance the capabilities of language models for tools usage.
 
 #### 🧠 3. Agents Module
 
-**You can run this module either locally or in Google Colab**. The associated notebooks are `colab_agents.ipynb` and `lmstudio_agents.ipynb`. Here we dive into building AI agents using small language models, demonstrating how an agent framework can be implemented for experimental purposes.
+**You can run notebooks from this section either locally or in Google Colab**. The associated notebooks are `colab_agents.ipynb` and `lmstudio_agents.ipynb`. Here we dive into building AI agents using small language models, demonstrating how an agent framework can be implemented for experimental purposes.
 
 # Contact
 
