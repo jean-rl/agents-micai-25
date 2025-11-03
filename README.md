@@ -32,7 +32,7 @@ If you plan to run the notebooks locally, ensure you have Python and Jupyter ins
 #### Inference Engine
 
 - `Colab`: If you wish to run the `colab_agents.ipynb` notebook on Google Colab, no additional setup is required. The notebook is pre-configured to use the `llama-server` binary included in the `utils/` folder.
-- `Local Setup`: First download and install LM Studio from [this link](https://lmstudio.ai/). Then download a compatible model for local inference using the user interface. We recommend `qwen/qwen3-4b-thinking-2507` or `llama3.1-8b`.
+- `Local Setup`: First download and install LM Studio from [this link](https://lmstudio.ai/). Then download a compatible model for local inference using the user interface. We recommend `qwen/qwen3-4b-thinking-2507` or `llama3.1-8b`. To see full logs while running any language model, open a terminal and run `lms log stream`, for more details visit the [log-stream](https://lmstudio.ai/docs/cli/log-stream) documentation.
 
 # ⚙️ Tutorial Structure & Requirements
 
